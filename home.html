@@ -1,46 +1,81 @@
-<!-- budget form -->
-<div class="budget-section">
-	<div class="budget col col-md col-sm">
-		<h2>Budget</h2>
-		<img src="image/money-bag.svg" width="40" alt="" />
-		<p class="amount">$ <span id="budgetAmount">0</span></p>
-	</div>
+<!DOCTYPE html>
+<html lang="en">
 
-	<div class="expenses col col-md col-sm">
-		<h2>Expenses</h2>
-		<img src="image/accounting.svg" width="40" alt="" />
-		<p class="exp-amount">$ <span id="expensesAmount">0</span></p>
-	</div>
+<head>
+	<title>Budget Calculator</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<div class="balance col col-md col-sm">
-		<h2>Balance</h2>
-		<img src="image/law.svg" width="40" alt="" />
-		<p class="amount bala">$ <span id="balanceAmount">0</span></p>
-	</div>
-</div>
+	<!-- css -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link rel="stylesheet" href="./style.css">
+	<!-- google font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@0;1&family=Work+Sans:wght@400;500;800&display=swap"
+		rel="stylesheet">
+</head>
 
-<div class="budget-form" id="budgetForm">
-	<form id="addForm">
-		<label for=""> Make a budget</label> <br />
-		<input type="number" id="number" /> <br />
-		<button type="submit">Add Budget</button>
-	</form>
-</div>
-
-<!-- creating expenses list -->
-<div class="expense-form" id="expense-form">
-	<form action="" id="expForm">
-
-		<div class="">
-			<label for="">Please enter your expenses</label> <br />
-			<input type="text" id="expName">
+<body>
+	<!-- budget form -->
+	<div class="budget-section">
+		<div class="budget col col-md col-sm">
+			<h2>Budget</h2>
+			<img src="image/money-bag.svg" width="40" alt="" />
+			<p class="amount">$ <span id="budgetAmount">0</span></p>
 		</div>
 
-		<div class="">
-			<label for="">Please enter the expense amount</label> <br />
-			<input type="number" id="expNumber">
+		<div class="expenses col col-md col-sm">
+			<h2>Expenses</h2>
+			<img src="image/accounting.svg" width="40" alt="" />
+			<p class="exp-amount">$ <span id="expensesAmount">0</span></p>
 		</div>
 
-		<button type="submit" id="submitExpense">Add Expense</button>
-	</form>
-</div>
+		<div class="balance col col-md col-sm">
+			<h2>Balance</h2>
+			<img src="image/law.svg" width="40" alt="" />
+			<p class="amount bala">$ <span id="balanceAmount">0</span></p>
+		</div>
+	</div>
+
+	<div class="budget-form" id="budgetForm">
+		<form id="addForm">
+			<label for=""> Make a budget</label> <br />
+			<input type="number" id="number" /> <br />
+			<button type="submit">Add Budget</button>
+		</form>
+	</div>
+
+	<!-- creating expenses list -->
+	<div class="expense-form" id="expense-form">
+		<form action="" id="expForm">
+
+			<div class="">
+				<label for="">Please enter your expenses</label> <br />
+				<input type="text" id="expName">
+			</div>
+
+			<div class="">
+				<label for="">Please enter the expense amount</label> <br />
+				<input type="number" id="expNumber">
+			</div>
+
+			<button type="submit" id="submitExpense">Add Expense</button>
+		</form>
+	</div>
+
+	<!-- footer -->
+	<footer class="footer mt-auto py-3 bg-dark fixed-bottom">
+		<div class="container">
+			<span>Made by Michael T</span>
+		</div>
+	</footer>
+
+	<!-- linking script -->
+	<script src="./expense.js"></script>
+</body>
+
+</html>
